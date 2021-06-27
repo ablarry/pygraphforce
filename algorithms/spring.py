@@ -10,7 +10,7 @@ class Spring:
     def __init__(self, graph, ):
         self.graph = graph
         self.positions = {}
-        self.screen = Screen(1000, 1000)
+        self.screen = Screen(1500, 800)
 
         nodes = self.graph.get_vertices()
         self.k = math.sqrt(1 / len(nodes))
@@ -72,5 +72,5 @@ class Spring:
         for i in range(0, 1000):
             self.iterate()
             self.screen.draw_graph(self.graph, self.positions)
-            time.sleep(0.2)
+            time.sleep(1)
         self.screen.wait_close()
