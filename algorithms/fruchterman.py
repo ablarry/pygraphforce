@@ -10,8 +10,8 @@ class Fruchterman:
     def __init__(self, graph, ):
         self.graph = graph
         self.positions = {}
-        self.w = 1000
-        self.l = 1000
+        self.w = 1400
+        self.l = 800
         self.t = 1
         self.screen = Screen(self.w, self.l)
 
